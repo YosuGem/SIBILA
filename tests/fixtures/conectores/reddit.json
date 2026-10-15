@@ -1,0 +1,8 @@
+{"kind":"Listing","data":{"children":[
+ {"kind":"t3","data":{"id":"p1","name":"t3_p1","title":"Noticia mundial","selftext":"Cuerpo con &amp; entidades","url":"https://example.com/post1","permalink":"/r/worldnews/comments/p1/noticia/","created_utc":1784541600.0,"author":"alice"}},
+ {"kind":"t1","data":{"id":"c1","body":"comentario colado"}},
+ {"kind":"t3","data":null},
+ {"kind":"t3","data":{"id":"p2","name":"t3_p2","title":"Sin fecha","selftext":"","url":"https://example.com/post2","permalink":"/r/worldnews/comments/p2/sin_fecha/","author":"bob"}},
+ {"kind":"t3","data":{"id":"p3","name":"t3_p3","title":"Repost","selftext":"otro cuerpo","url":"https://example.com/post1","permalink":"/r/worldnews/comments/p3/repost/","created_utc":1784545200.0,"author":"carol"}},
+ {"kind":"t3","data":{"id":"p4","name":"t3_p4","title":"Self post","selftext":"texto propio","url":"","permalink":"/r/worldnews/comments/p4/self_post/","created_utc":1784538000.0,"author":"dave"}}
+]}}

@@ -1,0 +1,8 @@
+joy	joy	1
+anger	anger	1
+fear	fear	1
+trust	trust	1
+sadness	sadness	1
+surprise	surprise	1
+disgust	disgust	1
+anticipation	anticipation	1

@@ -1,0 +1,9 @@
+Termino	Valencia	Activacion
+alegria	0.95	0.8
+rabia	0.1	0.85
+miedo	0.15	0.9
+confianza	0.9	0.6
+tristeza	0.05	0.3
+sorpresa	0.75	0.85
+asco	0.1	0.65
+espera	0.7	0.75

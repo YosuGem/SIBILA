@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Lobsters fixture</title>
+<link>https://lobste.rs/</link>
+<description>fixture sintetico con forma real (tests T1)</description>
+<item>
+  <title>El lenguaje de programacion del mes</title>
+  <link>https://lobste.rs/s/abc123/el_lenguaje</link>
+  <guid>https://lobste.rs/s/abc123/el_lenguaje</guid>
+  <author>by nora</author>
+  <pubDate>Mon, 20 Jul 2026 12:00:00 +0200</pubDate>
+  <description>&lt;p&gt;Discusion con &lt;b&gt;HTML&lt;/b&gt; crudo&lt;/p&gt;</description>
+</item>
+<item>
+  <title>Sin fecha: depurando un kernel</title>
+  <link>https://lobste.rs/s/def456/kernel</link>
+  <guid>https://lobste.rs/s/def456/kernel</guid>
+  <author>by oscar</author>
+  <description>item sin pubDate: fecha debe ser None</description>
+</item>
+<item>
+  <author>by nadie</author>
+</item>
+<item>
+  <title>Repost del lenguaje</title>
+  <link>https://lobste.rs/s/abc123/el_lenguaje</link>
+  <guid>https://lobste.rs/s/abc123/el_lenguaje</guid>
+  <author>by reposteador</author>
+  <pubDate>Mon, 20 Jul 2026 14:00:00 +0200</pubDate>
+  <description>mismo link que el primero: duplicado en lote</description>
+</item>
+<item>
+  <title>Segundo caso con offset</title>
+  <link>https://lobste.rs/s/ghi789/offset</link>
+  <guid>https://lobste.rs/s/ghi789/offset</guid>
+  <author>by nora</author>
+  <pubDate>Sun, 19 Jul 2026 23:30:00 -0500</pubDate>
+  <description>fecha -0500: debe dar 2026-07-20T04:30:00Z</description>
+</item>
+</channel>
+</rss>

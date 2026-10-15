@@ -1,0 +1,8 @@
+alegria	joy	1
+rabia	anger	1
+miedo	fear	1
+confianza	trust	1
+tristeza	sadness	1
+sorpresa	surprise	1
+asco	disgust	1
+espera	anticipation	1

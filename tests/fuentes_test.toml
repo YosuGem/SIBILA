@@ -1,0 +1,19 @@
+# Fuentes de PRUEBA: apuntan a fixtures locales (rutas relativas a este archivo, tests/).
+# Los nombres casan con FUENTES_SEMILLA de ingesta.py.
+
+[reddit]
+habilitada = true
+fixture = "fixtures/conectores/reddit.json"
+
+[lobsters]
+habilitada = true
+fixture = "fixtures/conectores/lobsters.xml"
+
+[mastodon]
+habilitada = true
+fixture = "fixtures/conectores/mastodon.xml"
+
+[4chan]
+habilitada = true
+fixture = "fixtures/conectores/cuatrochan.json"
+paginas = 3
