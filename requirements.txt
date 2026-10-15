@@ -1,0 +1,20 @@
+# SIBILA · runtime. Versiones FIJADAS (spec §3); cada dependencia entra con su bloque y su TP.
+# Resolver verificado 2026-07-20. Wheels py3-none-any (valen en win_amd64 cp312) salvo nota.
+# Bloque 2 · conectores (TP-N2/N11):
+feedparser==6.0.12          # RSS/Atom (wheel universal)
+sgmllib3k==1.0.0            # dep de feedparser: SOLO sdist en PyPI (el módulo se llama "sgmllib");
+                            # instalar.bat NO puede usar --only-binary=:all: salvo bundle (pip wheel -r)
+requests==2.34.2            # HTTP (wheel universal)
+urllib3==2.8.0              # transitivas de requests, fijadas para instalación reproducible
+idna==3.18
+charset-normalizer==3.4.9   # wheel cp312 win_amd64 verificado
+certifi==2026.6.17
+# Bloque 4 · procesado (TP-N3/N8/N9/N14; huecos de Liskov §9 rellenados por Lovelace §2):
+fasttext-predict==0.9.2.4       # idioma; wheel cp312 win_amd64 VERIFICADO (L2). lid.176.ftz
+                                # se descarga en instalar.bat con SHA-256 fijado (spec §3).
+lingua-language-detector==2.2.0 # fallback de idioma dudoso; wheel cp312 win_amd64 VERIFICADO (L3)
+vaderSentiment==3.3.2           # emoción EN (compound); wheel py2.py3-none-any VERIFICADO (L4)
+# MinHash: implantación PROPIA en procesado/dedup.py (Plan B, Lovelace §1) — SIN
+# datasketch/scipy/numpy (datasketch 1.6.5 importa scipy a nivel de módulo: L1 de Lovelace).
+# NRC-VAD y NRC Emotion Lexicon: NO pip; descarga en instalación con SHA-256 fijado (spec §3).
+# Extra: opentimestamps-client, telethon (requirements-extra, bloque registro/alertas).

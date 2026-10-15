@@ -1,0 +1,36 @@
+# SIBILA · fuentes de ingesta (spec §2/§6). Claves permitidas por fuente:
+# habilitada, url, fixture, subreddit, instancia, tag, tablon, paginas.
+# "fixture" (ruta local relativa a ESTE archivo) tiene precedencia sobre url: modo T1 sin red.
+# La opción --en-vivo del CLI fuerza descarga aunque haya fixture.
+
+[reddit]
+habilitada = true
+subreddit = "worldnews"
+url = "https://www.reddit.com/r/worldnews/new/.json?limit=100"
+# fixture = "tests/fixtures/conectores/reddit.json"
+
+[lobsters]
+habilitada = true
+url = "https://lobste.rs/rss"
+# fixture = "tests/fixtures/conectores/lobsters.xml"
+
+[mastodon]
+habilitada = true
+instancia = "mastodon.social"
+tag = "ai"
+# url derivada: https://<instancia>/tags/<tag>.atom
+# fixture = "tests/fixtures/conectores/mastodon.xml"
+
+# [4chan] — NO habilitada en la distribución pública por defecto (D-075, 2026-10-13).
+# Evaluación técnica delegada: señal ruidosa y riesgo reputacional para la
+# distribución pública; valor predictivo nunca validado (0 días de datos reales).
+# La fuente sigue registrada en la semilla de la base de datos (integridad
+# referencial) y el CONECTOR existe y está probado
+# (sibila/conectores/cuatrochan.py); quien quiera usarlo puede activarlo
+# añadiendo aquí, por ejemplo:
+# [4chan]
+# habilitada = true
+# tablon = "pol"
+# paginas = 3
+# url derivada: https://a.4cdn.org/<tablon>/catalog.json
+# fixture = "tests/fixtures/conectores/cuatrochan.json"

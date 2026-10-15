@@ -1,0 +1,10 @@
+# SIBILA · configuración base. SIN SECRETOS: van en config.local.toml o variables SIBILA_* (spec §3).
+# Precedencia: valores por defecto del código < este archivo < config.local.toml < variables de entorno (spec §2).
+
+[general]
+# Directorio de datos (BD, exportaciones). Relativo = anclado a la raíz del proyecto, nunca al cwd.
+data_dir = "datos"
+# Ruta de la base SQLite. Por defecto: <data_dir>/sibila.db (descomentar para cambiar):
+# db_path = "datos/sibila.db"
+# Nivel de log: DEBUG | INFO | WARNING | ERROR
+log_level = "INFO"

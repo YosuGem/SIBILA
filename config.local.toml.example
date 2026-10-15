@@ -1,0 +1,20 @@
+# PLANTILLA de secretos. Copiar a config.local.toml (gitignored) y rellenar.
+# NUNCA versionar el archivo real. Las variables de entorno SIBILA_* pisan estos valores.
+
+[secretos]
+# Clave HMAC para author_hash (anonimización de autores, spec §6.8):
+# hmac_key = ""
+# Bot de Telegram (bloque de alertas; variable equivalente: SIBILA_TELEGRAM_TOKEN):
+# telegram_token = ""
+# Chat de Telegram destino de las alertas (SIBILA_TELEGRAM_CHAT):
+# telegram_chat = ""
+# Contraseña SMTP (bloque de alertas; variable equivalente: SIBILA_SMTP_PASSWORD):
+# smtp_password = ""
+# Servidor SMTP (SIBILA_SMTP_HOST; por defecto "localhost"):
+# smtp_host = ""
+# Puerto SMTP como ENTERO (SIBILA_SMTP_PORT; por defecto 25):
+# smtp_puerto = 587
+# Usuario/remitente SMTP (SIBILA_SMTP_USUARIO; por defecto "sibila@localhost"):
+# smtp_usuario = ""
+# Destinatario de las alertas por correo (SIBILA_SMTP_DESTINO):
+# smtp_destino = ""
